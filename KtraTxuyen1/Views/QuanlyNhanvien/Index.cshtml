@@ -1,0 +1,100 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+<h2>Danh sách 1: </h2>
+<table cellpadding="1" border="1">
+    <tr>
+        <th>
+            Mã NV
+        </th>
+        <th>
+            Họ Tên
+        </th>
+        <th>
+            Địa chỉ
+        </th>
+        <th>
+            Số ngày làm
+        </th>
+        <th>
+            Lương ngày
+        </th>
+        <th>
+            Tiền lương
+        </th>
+
+    </tr>
+    @foreach (var item in ViewBag.DanhSach1)
+    {
+        <tr>
+            <td>
+                @item.manv
+            </td>
+            <td>
+                @item.hoten
+            </td>
+            <td>
+                @item.diachi
+            </td>
+            <td>
+                @item.songaylam
+            </td>
+            <td>
+                @item.luongngay
+            </td>
+            <td>
+                @item.tienluong
+            </td>
+        </tr>
+    }
+</table>
+<h2>Danh sách 2: </h2>
+<table cellpadding="1" border="1">
+    <tr>
+        <th>
+            Mã NV
+        </th>
+        <th>
+            Họ Tên
+        </th>
+        <th>
+            Địa chỉ
+        </th>
+        <th>
+            Số ngày làm
+        </th>
+        <th>
+            Lương ngày
+        </th>
+        <th>
+            Tiền lương
+        </th>
+
+    </tr>
+    @foreach (var item in ViewBag.DanhSach2)
+    {
+        <tr>
+            <td>
+                @item.manv
+            </td>
+            <td>
+                @item.hoten
+            </td>
+            <td>
+                @item.diachi
+            </td>
+            <td>
+                @item.songaylam
+            </td>
+            <td>
+                @item.luongngay
+            </td>
+            <td>
+                @item.tienluong
+            </td>
+        </tr>
+    }
+</table>
+
+
